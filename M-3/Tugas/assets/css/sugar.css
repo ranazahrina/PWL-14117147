@@ -1,0 +1,88 @@
+/*	navigasi */
+nav ul{
+	display: flex;
+	list-style: none;
+	border-bottom: 1px solid #f4858e;
+	padding: 1rem;
+	box-shadow: 13px 12px 23px #f4858e;
+}
+nav li{
+	flex: 1;
+}
+
+nav li a{
+	font-family: 'Arial';
+	text-decoration: none;
+	color: black;
+}
+
+/*	konten */
+section{
+	margin-left: 25%;
+	word-break: break-word;
+	padding-top: 2rem;
+}
+
+section h1{
+	font-family: 'Arial';
+	font-size: 32px;
+}
+
+section h3{
+	font-family: 'Arial';
+}
+
+section p{
+	font-family: 'Arial';
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: auto;
+ }
+ .container > div{
+     background-color: #fa8072;
+     margin: 8px;
+     padding: 100px;
+     width: 100px;
+     height: auto;
+     text-align: center;
+ }
+
+ @media screen and (max-width: 768px){
+ 	body{
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		width: auto;
+ 		flex-direction: column;
+ 	}
+ 	ul{
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		width: auto;
+ 		flex-direction: column;
+ 	}
+ 	nav{
+ 		width: 80%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 	}
+ 	.container{
+ 		display: flex;
+ 		width: 100%;
+ 		height: auto;
+ 		flex-direction: column;
+ 	}
+ }
+
+ .mode-malam{
+	 background-color: black;
+	 color: white;
+ }
+
+ .mode-malam > nav li a{
+	 font-family: 'Arial';
+	 text-decoration: none;
+	 color: white;
+ }

@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <style>
+      .malam{
+        background-color: #222;
+        color: #eee;
+      }
+      body{
+        background-color:#eee;
+        color: #222;
+      }
+    </style>
+  </head>
+  <body class="malam">
+    <button id="tombol">Berubah ke mode siang</button>
+
+    <script>
+      rana = document.getElementById("tombol");
+
+        rana.onclick = function(){
+          badan = document.getElementsByTagName("body")[0];
+          if (rana.innerText == "Berubah ke mode siang"){
+            rana.innerText = "Berubah ke mode malam";
+            badan.classList.remove("malam");
+          }else{
+            rana.innerText = "Berubah ke mode siang";
+            badan.classList.add("malam");
+          }
+        }
+    </script>
+  </body>
+</html>
